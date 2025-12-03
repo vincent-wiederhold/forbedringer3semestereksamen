@@ -1,0 +1,10 @@
+{
+  "hosting": { "site": "semestereksamen-85cb6",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
