@@ -1,0 +1,73 @@
+@use '_colors.scss' as c;
+@use '_fonts.scss' as f;
+
+h1{
+    color: c.$fontcolor-primary;
+    font-family: f.$heading-primary;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h2{
+    color: c.$fontcolor-primary;
+    font-family: f.$heading-primary;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h3{
+    color: c.$fontcolor-primary;
+    font-family: f.$heading-secondary;
+    font-size: 20px;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h4{
+    color: c.$fontcolor-primary;
+    font-family: f.$heading-secondary;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h5{
+    color: c.$fontcolor-primary;
+}
+
+p{
+    color: c.$fontcolor-primary;
+    font-family: f.$heading-secondary;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+body{
+    color: c.$fontcolor-secondary;
+    background-color: c.$backgroundcolor-primary;
+}
+
+@media (min-width: 800px) {
+
+    h1{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    h4{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
