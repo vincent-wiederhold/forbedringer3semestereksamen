@@ -43,10 +43,10 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg';
       <button>SE KUNSTNERE</button>
     </div>
     <div class="kunstner-quadruple">
-      <img src="../assets/images/kunstnere/akiko-og-ken.jpg" alt="Akiko og Ken">
-      <img src="../assets/images/kunstnere/anne-bannick.jpg" alt="Anne Bannick">
-      <img src="../assets/images/kunstnere/claydies.jpg" alt="Claydies">
-      <img src="../assets/images/kunstnere/jytte-kornbeck-løppenthin.jpg" alt="Jytte Kornbeck Løppenthin">
+      <img src="@/assets/images/kunstnere/akiko-og-ken.jpg" alt="Akiko og Ken">
+      <img src="@/assets/images/kunstnere/anne-bannick.jpg" alt="Anne Bannick">
+      <img src="@/assets/images/kunstnere/claydies.jpg" alt="Claydies">
+      <img src="@/assets/images/kunstnere/jytte-kornbeck-løppenthin.jpg" alt="Jytte Kornbeck Løppenthin">
     </div>
   </div>
   
@@ -77,7 +77,7 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg';
       </div>
 
       <div class="kontakt-billede">
-        <img src="../assets/images/butik/dinavejling-butik-udenfor1.webp" alt="">
+        <img src="@/assets/images/butik/dinavejling-butik-udenfor1.webp" alt="">
       </div>
     </div>
   <div>

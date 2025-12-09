@@ -21,7 +21,7 @@ import FooterBottom from '@/components/FooterBottom.vue';
             </div>
         </div>
         <div class="kategoriprodukt-billede">
-            <img src="../assets\images\produkter\kopper\espresso-kop-sort-mia-maya.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/espresso-kop-sort-mia-maya.webp" alt="">
         </div>
     </div>
     <router-link to="/specifikprodukt">
@@ -34,7 +34,7 @@ import FooterBottom from '@/components/FooterBottom.vue';
                 </div>
             </div>
             <div class="kategoriprodukt-billede">
-                <img src="../assets\images\produkter\kopper\krus-stor-lyseblå-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+                <img src="@/assets/images/produkter/kopper/krus-stor-lyseblå-claire-maria-lehmann-og-iben-harboe.webp" alt="">
             </div>
         </div>
     </router-link>
@@ -47,7 +47,7 @@ import FooterBottom from '@/components/FooterBottom.vue';
             </div>
         </div>
         <div class="kategoriprodukt-billede">
-            <img src="../assets\images\produkter\kopper\kop-med-hank-og-riller-grå-christina-friis.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/kop-med-hank-og-riller-grå-christina-friis.webp" alt="">
         </div>
     </div>
 </div>

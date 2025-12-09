@@ -18,14 +18,14 @@ import Navbar from '@/components/Navbar.vue';
             <p class="produkt-pris">275 kr.</p>
         </div>
         <div class="produkt-stort-billede">
-            <img src="../assets\images\produkter\kopper\krus-stor-lyseblå-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-lyseblå-claire-maria-lehmann-og-iben-harboe.webp" alt="">
         </div>
         <div class="produkt-smaa-billeder">
-            <img src="..\assets\images\produkter\kopper\krus-stor-lysegul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
-            <img src="..\assets\images\produkter\kopper\krus-stor-brun-claire-maria-lehmann-og-iben-harboe.webp" alt="">
-            <img src="..\assets\images\produkter\kopper\krus-stor-lysegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
-            <img src="..\assets\images\produkter\kopper\krus-stor-mørkegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
-            <img src="..\assets\images\produkter\kopper\krus-stor-gul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-lysegul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-brun-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-lysegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-mørkegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-gul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
         </div>
         <div class="produkt-tekst">
             <p>Disse flerfarvet krus er lavet af kunstnerduen Claire Maria Lehmann og Iben Harboe, der til 
@@ -45,7 +45,7 @@ import Navbar from '@/components/Navbar.vue';
         
         <div class="produkt-dual">
             <div class="produkt-stort-billede">
-                <img src="../assets\images\produkter\kopper\krus-stor-lyseblå-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+                <img src="@/assets/images/produkter/kopper/krus-stor-lyseblå-claire-maria-lehmann-og-iben-harboe.webp" alt="">
             </div>
             <div class="produkt-tekst-container">
                 <div class="produkt-info">
@@ -70,11 +70,11 @@ import Navbar from '@/components/Navbar.vue';
         </div>
 
         <div class="produkt-smaa-billeder">
-            <img src="..\assets\images\produkter\kopper\krus-stor-lysegul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
-            <img src="..\assets\images\produkter\kopper\krus-stor-brun-claire-maria-lehmann-og-iben-harboe.webp" alt="">
-            <img src="..\assets\images\produkter\kopper\krus-stor-lysegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
-            <img src="..\assets\images\produkter\kopper\krus-stor-mørkegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
-            <img src="..\assets\images\produkter\kopper\krus-stor-gul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-lysegul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-brun-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-lysegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-mørkegrøn-claire-maria-lehmann-og-iben-harboe.webp" alt="">
+            <img src="@/assets/images/produkter/kopper/krus-stor-gul-claire-maria-lehmann-og-iben-harboe.webp" alt="">
         </div>
         
     </div>
@@ -95,16 +95,16 @@ import Navbar from '@/components/Navbar.vue';
         <div class="andre-produkter-karrusel">
             <font-awesome-icon icon="fa-solid fa-chevron-left arrows" />
             <div class="andre-produkter-billede-container">
-                <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap1.webp" alt="Sort vase af keramik">
+                <img src="@/assets/images/produkter/vaser/vase-hit-the-clay-clip-klap1.webp" alt="Sort vase af keramik">
             </div>
             <div class="andre-produkter-billede-container">
-                <img src="..\assets\images\produkter\tekander\tekande-clip-klap.webp" alt="Tekande">
+                <img src="@/assets/images/produkter/tekander/tekande-clip-klap.webp" alt="Tekande">
             </div>
             <div class="andre-produkter-billede-container hidden-on-mobile">
-                <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap2.webp" alt="">
+                <img src="@/assets/images/produkter/vaser/vase-hit-the-clay-clip-klap2.webp" alt="">
             </div>
             <div class="andre-produkter-billede-container hidden-on-mobile">
-                <img src="..\assets\images\produkter\vaser\vase-hit-the-clay-clip-klap3.webp" alt="">
+                <img src="@/assets/images/produkter/vaser/vase-hit-the-clay-clip-klap3.webp" alt="">
             </div>
             <font-awesome-icon icon="fa-solid fa-chevron-right arrows" />
         </div>

@@ -38,11 +38,11 @@ const haandterPause = () => (afspillerVideo.value = false);
       v-on:play="haandterPlay"
       v-on:pause="haandterPause"
     >
-    <source src="../assets/dinahero.mp4" />
+    <source src="@/assets/dinahero.mp4" />
     </video>
 
     <div class="hero-logo">
-      <img src="../assets/dinavejling.svg" alt="Dina Vejling logo">
+      <img src="@/assets/dinavejling.svg" alt="Dina Vejling logo">
     </div>
 
     <div class="controls">
@@ -72,12 +72,12 @@ const haandterPause = () => (afspillerVideo.value = false);
       </div>
       <button><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> FIND BUTIKKEN PÅ KORT</button>
     </div>
-    <img src="../assets/dina_vejling_forside_1080x.webp" alt="">
+    <img src="@/assets/dina_vejling_forside_1080x.webp" alt="">
   </div>
 
 
 <div class="dividerimage">
-<img src="../assets/markus-winkler-JZyHRn8Cq3k-unsplash.webp" alt="">
+<img src="@/assets/markus-winkler-JZyHRn8Cq3k-unsplash.webp" alt="">
 </div>
   <Arrangement/>
   <Carrusel/>
