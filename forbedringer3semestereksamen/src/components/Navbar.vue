@@ -34,7 +34,7 @@ onMounted( () => {
             <ul id="menu-punkter">
                 <li>
                     <button @click="dropdownToggle" id="katalog-knap" ref="katalogKnap">
-                        Katalog<font-awesome-icon icon="fa-solid fa-angle-down" />
+                        Produkter<font-awesome-icon icon="fa-solid fa-angle-down" />
                     </button>
                 </li>
                 <li>Arrangementer</li>

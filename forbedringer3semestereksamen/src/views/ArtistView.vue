@@ -1,6 +1,6 @@
 <script setup>
-import Navbar from '../components/Navbar.vue';
-import FooterBottom from '../components/FooterBottom.vue';
+import Navbar from '@/components/Navbar.vue';
+import FooterBottom from '@/components/FooterBottom.vue';
 import { ref } from 'vue';
 
 const kunstner = ref([]);
