@@ -37,7 +37,7 @@ onMounted( () => {
                         Produkter<font-awesome-icon icon="fa-solid fa-angle-down" />
                     </button>
                 </li>
-                <li>Arrangementer</li>
+                <li><router-link to="/arrangementer">Arrangementer</router-link></li>
                 <li><router-link to="/kunstnere">Kunstnere</router-link></li>
                 <li>Galleri RUMMET</li>
                 <li><router-link to="/omos">Om os</router-link></li>
