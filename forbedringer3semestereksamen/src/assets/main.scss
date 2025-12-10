@@ -20,14 +20,9 @@ button {
     padding: 15px 30px;
     border: none;
     &:hover{
-        color: c.$secondary-color;
+        background-color: c.$secondary-color;
     }
 }
-
-button:hover {
-    background-color: c.$secondary-color;
-}
-
 
 //*******MOBILE*******
 button {
