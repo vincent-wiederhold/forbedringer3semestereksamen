@@ -47,7 +47,7 @@
             </div>
             <div class="footerelements venstre">
                     <div class="logo-container">
-                    <img src="../assets/dinavejling.svg" alt="" class="logo">
+                    <img src="@/assets/dinavejling.svg" alt="" class="logo">
                 </div>
             </div>
         </div>

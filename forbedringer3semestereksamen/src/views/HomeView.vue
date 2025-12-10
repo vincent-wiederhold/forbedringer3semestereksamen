@@ -8,8 +8,7 @@ import { ref } from "vue";
 const video = ref(null);
 const afspillerVideo = ref(false);
 
-const togglePlay = () => {
-
+const afspilningsKnap = () => {
   // Hvis videoen er pauset, afspil den
   if (video.value.paused === true) {
     video.value.play();
@@ -29,14 +28,14 @@ const haandterPause = () => (afspillerVideo.value = false);
 <template>
   <Navbar/>
   <figure class="herovideo">
-    <!-- muted fordi video med lyd ikke må autoplayes-->
+    <!-- muted fordi video med lyd ikke må autoplayes, v-on: = @ -->
     <video
       ref="video"
       loop
       autoplay
       muted
-      v-on:play="haandterPlay"
-      v-on:pause="haandterPause"
+      @play="haandterPlay"
+      @pause="haandterPause"
     >
     <source src="@/assets/dinahero.mp4" />
     </video>
@@ -46,7 +45,7 @@ const haandterPause = () => (afspillerVideo.value = false);
     </div>
 
     <div class="controls">
-      <button v-on:click="togglePlay">
+      <button @click="afspilningsKnap">
         <font-awesome-icon v-if="afspillerVideo" icon="fa-solid fa-pause" />
         <font-awesome-icon v-else icon="fa-solid fa-play" />
       </button>
@@ -58,6 +57,7 @@ const haandterPause = () => (afspillerVideo.value = false);
     <h1>DANSK KUNSTHÅNDVÆRK MED SJÆL</h1>
     <p>Hos Dina Vejling kan du gå på opdagelse i en verden af unikke håndplukkede værker fra over 70 professionelle kunstnere. Find os i Brandts passage i latinerkvateret i Odense.</p>
   </div>
+
   <div class="aabningstidersection">
     <div class="grouping">
       <h1>ÅBNINGSTIDER</h1>
@@ -75,11 +75,13 @@ const haandterPause = () => (afspillerVideo.value = false);
     <img src="@/assets/dina_vejling_forside_1080x.webp" alt="">
   </div>
 
+  <div class="dividerimage">
+    <img src="@/assets/markus-winkler-JZyHRn8Cq3k-unsplash.webp" alt="">
+  </div>
 
-<div class="dividerimage">
-<img src="@/assets/markus-winkler-JZyHRn8Cq3k-unsplash.webp" alt="">
-</div>
   <Arrangement/>
   <Carrusel/>
   <FooterBottom/>
 </template>
+<style scoped>
+</style>
