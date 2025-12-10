@@ -19,6 +19,9 @@ button {
     font-weight: 700;
     padding: 15px 30px;
     border: none;
+    &:hover{
+        color: c.$secondary-color;
+    }
 }
 
 button:hover {
@@ -27,13 +30,11 @@ button:hover {
 
 
 //*******MOBILE*******
-
 button {
     font-size: 15px;
 }
 
 // Navbar
-
 nav {
     background-color: c.$primary-color;
     font-family: f.$heading-secondary;
@@ -87,45 +88,41 @@ nav {
         }
     }
 
-    
-
     #katalog-dropdown {
-            position: absolute;
-            z-index: 50;
-            background-color: #fff;
-            color: c.$fontcolor-primary;
-            top: 100%;
-            width: 100%;
-            max-height: 100vh;
-            overflow: auto;
-            box-shadow: 3px 5px 10px 2px rgba($color: #000000, $alpha: 0.3);
-            padding: 10px;
+        position: absolute;
+        z-index: 50;
+        background-color: #fff;
+        color: c.$fontcolor-primary;
+        top: 100%;
+        width: 100%;
+        max-height: 100vh;
+        overflow: auto;
+        box-shadow: 3px 5px 10px 2px rgba($color: #000000, $alpha: 0.3);
+        padding: 10px;
 
-            .dropdown-kategori {
-                padding: 20px;
+        .dropdown-kategori {
+            padding: 20px;
 
-                .kategori-navn {
-                    font-weight: 700;
-                    font-size: 18px;
-                    padding: 5px;
-                    margin-bottom: 10px;
-                }
-
-                .kategori-link {
-                    padding: 7px;
-                    padding-left: 20px;
-                }
-            }
-            .divider-line {
-                margin-left: 20px;
-                margin-right: 20px;
+            .kategori-navn {
+                font-weight: 700;
+                font-size: 18px;
+                padding: 5px;
+                margin-bottom: 10px;
             }
 
+            .kategori-link {
+                padding: 7px;
+                padding-left: 20px;
+            }
         }
+        .divider-line {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
 }
 
 //Hero
-
 .hero {
     height: 30vh;
     background-size: cover;
@@ -153,21 +150,16 @@ nav {
         background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../assets/krusogkopper.webp")
 }
 
-
-
 //herovideo
-
 .herovideo{
     position: relative;
     display: inline-block;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
-
     display: flex;
     justify-content: center;
     align-items: center ;
-
     .hero-logo {
         position: absolute;
 
@@ -175,7 +167,6 @@ nav {
             height: 60px;
         }
     }
-
     video{
         width: 100%;
         height: auto;
@@ -217,13 +208,12 @@ nav {
     .kontaktoplysninger{
         margin: 20px 0px;
     }
-    
     button{ 
         width: 100%;
         margin: 20px 0px;
-
     }
 }
+
 // her er dividerimage
 .dividerimage{
     color: red;
@@ -234,9 +224,7 @@ nav {
     }
 }
 
-
-    // her kommer arrangementer
-
+// her kommer arrangementer
 .arrangementsection{
     width: 325px;
     display: flex;
@@ -261,8 +249,7 @@ nav {
     }
 }
 
-    // her kommer karussel
-
+// her kommer karussel
 .carruselsection{
     width: 325px;
     display: flex;
@@ -298,10 +285,7 @@ nav {
     }
 }
 
-
-
-
-
+//her kommer footer
 footer{
     background-color: c.$footer-backgroundcolor;
 
@@ -375,292 +359,284 @@ footer{
 
 
 //OM OS
+.image-border-mobile {
+    display: block;
+    margin: 50px 0;
+}
 
-    
+.section-wrapper {
+    width: 75%;
+    margin: 50px auto;
+} 
 
-    .image-border-mobile {
+.image-wrapper {
+    width: 100%;
+    margin: 100px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image-border-desktop {
+    display: none;
+}
+
+.left {
+    left: 2.5%;
+}
+
+.right {
+    right: 2.5%;
+} 
+
+.paragraf {
+    margin-top: 20px;
+}
+
+.heading {
+    margin-top: 50px;
+}
+
+.section-dual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+    .heading {
+        margin-top: 0;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+}
+
+.kunstner-quadruple {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 0;
+    height: 250px;
+    margin-top: 30px;
+
+    img {
+        height: 125px;
+        width: 125px;
         display: block;
-        margin: 50px 0;
     }
+}
 
-    .section-wrapper {
-        width: 75%;
-        margin: 50px auto;
-    } 
+.kontakt-billede {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    overflow: hidden;
 
-    .image-wrapper {
+    img {
         width: 100%;
-        margin: 100px auto;
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
+        display: block;
+    }        
+}
 
-    .image-border-desktop {
-        display: none;
-    }
+.kontakt-blok {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    .left {
-        left: 2.5%;
-    }
+    background-color: #fff;
+    width: 100%;
 
-    .right {
-        right: 2.5%;
-    } 
-
-    .paragraf {
+    h2 {
         margin-top: 20px;
     }
 
-    .heading {
-        margin-top: 50px;
+    h3 {
+        margin-top: 20px;
     }
 
-    .section-dual {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-
-        .heading {
-            margin-top: 0;
-        }
-
-        button {
-            margin-top: 20px;
-        }
+    .width {
+        width: 60%;
     }
 
-    .kunstner-quadruple {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        margin-left: 0;
-        height: 250px;
+    .adresse-blok {
+        margin: 10px 0;
+    }
+
+    .aabningstid {
+        margin-top: 5px;
+    }
+
+    .kontakt-oplysning {
+        margin-top: 10px;
+    }
+
+    .knap-margin {
         margin-top: 30px;
-
-        img {
-            height: 125px;
-            width: 125px;
-            display: block;
-        }
+        margin-bottom: 30px;
     }
+}
 
-    .kontakt-billede {
+.kontakt-section {
+    display: flex;
+    flex-direction: column;
+    border-top: 8px solid c.$secondary-color;
+    border-bottom: 8px solid c.$secondary-color;
+}
+
+// Produktside
+.hidden-on-mobile {
+    display: none;
+}
+
+.hidden-on-desktop {
+    display: block;
+}
+
+.produkt-section-wrapper {
+    width: 80%;
+    margin: 50px auto;
+} 
+
+.produkt-info {
+    margin-bottom: 30px;
+}
+
+.produkt-pris {
+    font-size: 14px;
+    color: rgba($color: #000, $alpha: 0.5);
+}
+
+.produkt-stort-billede {
+    
+    img {
+        max-height: 800px;
+        min-height: 200px;
         width: 100%;
-        max-height: 700px;
-        object-fit: cover;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            display: block;
-        }        
+        display: block;
     }
+}
 
-    .kontakt-blok {
+.produkt-smaa-billeder {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    flex-wrap: wrap;
+
+    img {
+        height: 100px;
+        display: block;
+        margin-right: 5px;
+    }
+}
+
+.produkt-tekst {
+    margin: 30px 0;
+
+    p {
+        margin: 10px 0;
+    }
+}
+
+.produkt-kunstner-info {
+
+    p {
+        margin: 10px 0 30px 0;
+    }
+}
+
+.andre-produkter {
+
+    .andre-produkter-karrusel {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        background-color: #fff;
-        width: 100%;
-
-        h2 {
-            margin-top: 20px;
-        }
-
-        h3 {
-            margin-top: 20px;
-        }
-
-        .width {
-            width: 60%;
-        }
-
-        .adresse-blok {
-            margin: 10px 0;
-        }
-
-        .aabningstid {
-            margin-top: 5px;
-        }
-
-        .kontakt-oplysning {
-            margin-top: 10px;
-        }
-
-        .knap-margin {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-    }
-
-    .kontakt-section {
-        display: flex;
-        flex-direction: column;
-        border-top: 8px solid c.$secondary-color;
-        border-bottom: 8px solid c.$secondary-color;
-    }
+        margin-top: 10px;
 
 
-
-    // Produktside
-
-    .hidden-on-mobile {
-        display: none;
-    }
-
-    .hidden-on-desktop {
-        display: block;
-    }
-
-    .produkt-section-wrapper {
-        width: 80%;
-        margin: 50px auto;
-    } 
-
-    .produkt-info {
-        margin-bottom: 30px;
-    }
-
-    .produkt-pris {
-        font-size: 14px;
-        color: rgba($color: #000, $alpha: 0.5);
-    }
-
-    .produkt-stort-billede {
-        
         img {
-            max-height: 800px;
-            min-height: 200px;
+            min-height: 50px;
+            max-height: 200px;
             width: 100%;
             display: block;
         }
-    }
 
-    .produkt-smaa-billeder {
-        display: flex;
-        flex-direction: row;
-        margin: 5px 0;
-        flex-wrap: wrap;
+        .andre-produkter-billede-container {
+            margin: 10px;
+        }
 
-        img {
-            height: 100px;
-            display: block;
-            margin-right: 5px;
+        svg {
+            height: 5em;
+            color: c.$primary-color;
         }
     }
+}
 
-    .produkt-tekst {
-        margin: 30px 0;
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0 20px;
 
-        p {
-            margin: 10px 0;
-        }
+    p {
+        font-size: 10px;
     }
 
-    .produkt-kunstner-info {
-
-        p {
-            margin: 10px 0 30px 0;
-        }
-    }
-
-    .andre-produkter {
-
-        .andre-produkter-karrusel {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            margin-top: 10px;
-
-
-            img {
-                min-height: 50px;
-                max-height: 200px;
-                width: 100%;
-                display: block;
-            }
-
-            .andre-produkter-billede-container {
-                margin: 10px;
-            }
-
-            svg {
-                height: 5em;
-                color: c.$primary-color;
-            }
-        }
-    }
-
-    .breadcrumbs {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 20px 0 0 20px;
-
-        p {
-            font-size: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #000;
-            margin-bottom: 10px;
-            margin-left: 10px;
-            &:hover{
-            text-decoration: underline;
-        }
-        }
-
-        .denne-side {
-            font-weight: 700;
-            margin-left: 10px;
-        }
-    }
-
- //Kategoriside
-
-    .kategoriprodukter{
-        margin: 80px 0px;
-        a{
-            text-decoration: none;
-            &:hover{
-                text-decoration: underline;
-                color: c.$fontcolor-primary;
-            }
-        }
-    }
-
-    .kategoriproduktright{
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        
+    a {
+        text-decoration: none;
+        color: #000;
+        margin-bottom: 10px;
+        margin-left: 10px;
         &:hover{
-            background-color: c.$fontcolor-secondary;
-        }
+        text-decoration: underline;
+    }
+    }
 
-        .kategoriprodukt-beskrivelse{
+    .denne-side {
+        font-weight: 700;
+        margin-left: 10px;
+    }
+}
+
+//Kategoriside
+.kategoriprodukter{
+    margin: 80px 0px;
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+            color: c.$fontcolor-primary;
+        }
+    }
+}
+
+.kategoriproduktright{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+        background-color: c.$fontcolor-secondary;
+    }
+
+    .kategoriprodukt-beskrivelse{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        .tekst{
+            width: 300px;
             display: flex;
-            justify-content: center;
-            width: 50%;
-            .tekst{
-                width: 300px;
-                display: flex;
-                flex-direction: column;
-                h2{
-                    margin-bottom: 5px;
-                }
-                p{
-                    margin-bottom: 20px;
-                }
+            flex-direction: column;
+            h2{
+                margin-bottom: 5px;
+            }
+            p{
+                margin-bottom: 20px;
             }
         }
+    }
 
-        .kategoriprodukt-billede {
+    .kategoriprodukt-billede {
         width: 50%;
         height: 700px;
         overflow: hidden;
@@ -671,53 +647,47 @@ footer{
             object-fit: cover;
             display: block;
         }
+    } 
 }
 
-        
+.kategoriproduktleft{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    &:hover{
+        background-color: c.$fontcolor-secondary;
     }
 
-    .kategoriproduktleft{
+    .kategoriprodukt-beskrivelse{
         display: flex;
-        align-items: center;
-        cursor: pointer;
-        flex-direction: row-reverse;
-        
-        &:hover{
-            background-color: c.$fontcolor-secondary;
-        }
-
-        .kategoriprodukt-beskrivelse{
+        justify-content: center;
+        width: 50%;
+        .tekst{
+            width: 300px;
             display: flex;
-            justify-content: center;
-            width: 50%;
-            .tekst{
-                width: 300px;
-                display: flex;
-                flex-direction: column;
-                h2{
-                    margin-bottom: 5px;
-                }
-                p{
-                    margin-bottom: 20px;
-                }
+            flex-direction: column;
+            h2{
+                margin-bottom: 5px;
+            }
+            p{
+                margin-bottom: 20px;
             }
         }
+    }
 
-        .kategoriprodukt-billede {
+    .kategoriprodukt-billede {
         width: 50%;
         height: 700px;
         overflow: hidden;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-            }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
     }
-
-
+}
 
 
 //*******DESKTOP*******
