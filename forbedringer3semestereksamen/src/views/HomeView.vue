@@ -22,6 +22,10 @@ const afspilningsKnap = () => {
 // Videoens egens play/pause-event der opdaterer Vue statuses
 const haandterPlay = () => (afspillerVideo.value = true);
 const haandterPause = () => (afspillerVideo.value = false);
+
+const aabnKort = () => {
+    window.open("https://www.google.com/maps/place/Brandts+Passage+30,+5000+Odense+C", "_blank");
+};
 </script>
 
 
@@ -70,7 +74,7 @@ const haandterPause = () => (afspillerVideo.value = false);
         <p>Brandts passage 30, 5000 Odense C</p>
         <p>+45 28 30 14 05</p>
       </div>
-      <button><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> FIND BUTIKKEN PÅ KORT</button>
+      <button @click="aabnKort"><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> FIND BUTIKKEN PÅ KORT <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="arrow"/></button>
     </div>
     <img src="@/assets/dina_vejling_forside_1080x.webp" alt="">
   </div>
