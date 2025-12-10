@@ -71,8 +71,8 @@ const aabnKort = () => {
       <h4>Søndag: Lukket</h4>
       <div class="kontaktoplysninger">
         <p>Dina Vejling - Dansk Kunsthåndværk</p><br>
-        <p>Brandts passage 30, 5000 Odense C</p>
-        <p>+45 28 30 14 05</p>
+        <p>Brandts passage 30, 5000 Odense C</p><br>
+        <p>Tlf. <a href="tel:+4528301405">+45 28 30 14 05</a></p>
       </div>
       <button @click="aabnKort"><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> FIND BUTIKKEN PÅ KORT <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="arrow"/></button>
     </div>

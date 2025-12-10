@@ -1,4 +1,7 @@
 <script setup>
+const aabnKort = () => {
+    window.open("https://www.google.com/maps/place/Brandts+Passage+30,+5000+Odense+C", "_blank");
+};
 </script>
 <template>
     <footer>
@@ -18,9 +21,9 @@
                 <div class="kontaktoplysninger-container">
                     <h4>Konkaktoplysinger</h4>
                     <ul>
-                        <li><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> Brandtspassage 30, 5000 Odense C</li>
+                        <li><a @click="aabnKort"><font-awesome-icon icon="fa-solid fa-location-dot" class="fa-lg"/> Brandtspassage 30, 5000 Odense C <font-awesome-icon icon="fa-solid fa-arrow-up-right-from-square" class="arrow"/></a></li>
                         <li><font-awesome-icon icon="fa-solid fa-envelope" class="fa-lg"/> info@dinavejling.dk</li>
-                        <li><font-awesome-icon icon="fa-solid fa-phone" class="fa-lg"/> +45 28 30 14 05</li>
+                        <li><font-awesome-icon icon="fa-solid fa-phone" class="fa-lg"/><a href="tel:+4528301405">+45 28 30 14 05</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,7 +35,7 @@
                         <li>Handelsbetingelser</li>
                         <li>Galleri Rummet</li>
                         <li>Arrengementer</li>
-                        <li>Kunstnere</li>
+                        <li><router-link to="/kunstnere">Kunstnere</router-link></li>
                     </ul>
                 </div>
             </div>
