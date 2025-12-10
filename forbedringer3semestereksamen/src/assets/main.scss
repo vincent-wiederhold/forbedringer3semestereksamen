@@ -254,39 +254,46 @@ nav {
 
 // her kommer karussel
 .carruselsection{
-    width: 325px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    .kunstnere{
+        width: 90%;
         display: flex;
-        justify-content: space-between;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        justify-content: center;
-        ul{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        flex-direction: column;
+        margin: 80px auto;
+        .overmarging{
+            p{margin-top: 30px;}
         }
-        button{
-            display: flex;
-            justify-content: center;
+        .kunstnere{
             background-color: c.$backgroundcolor-primary;
-            color: c.$primary-color;
-            rotate: 90deg;
-            width: 50px;
-        }
-        li{
-            list-style: none;
-            padding: 100px;
-            margin: 10px;
-            max-width: 275px;
-            background: rgba($color: #000, $alpha: 0.2);
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+            margin-bottom: 40px;
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                button{
+                background-color: c.$backgroundcolor-primary;
+                color: c.$primary-color;
+                rotate: none;
+                cursor: pointer;
+                &:hover{
+                    color: c.$secondary-color;
+                }
+                }
+
+                li{
+                    list-style: none;
+                    padding: 100px;
+                    background-color: rgba($color: #000, $alpha: 0.2);
+                }
+            }
         }
     }
-}
 
 //her kommer footer
 footer{
@@ -1090,6 +1097,7 @@ button {
 
         button {
             margin-top: 20px;
+            cursor: pointer;
         }
     }
 
@@ -1159,6 +1167,7 @@ button {
         .knap-margin {
             margin-top: 30px;
             margin-bottom: 0;
+            cursor: pointer;
         }
     }
 

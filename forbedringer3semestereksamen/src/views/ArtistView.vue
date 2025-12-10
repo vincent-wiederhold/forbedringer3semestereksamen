@@ -25,7 +25,7 @@ getKunstner();
     <h1 class="hero-text">Kunstnere</h1>
   </div>
 <div class="section-wrapper">
-    <h2>Hivlke ansigter gemmer sig bag værkerne</h2>
+    <h2>HVILKE ANSIGTER GEMMER SIG BAG VÆRKERNE</h2>
     <div class="artist">
         <li v-for="kunstnerData in kunstner" :key="kunstnerData">
         <h2>{{ kunstnerData.Kunstnernavn }}</h2>
