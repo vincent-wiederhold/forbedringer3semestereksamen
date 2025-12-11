@@ -15,7 +15,6 @@ import Navbar from '@/components/Navbar.vue';
     <p>De keramiske krus og kopper er hos os speciallavet kunsthåndværk, flere forskellige slags kan ses an i butikken</p>
     <Arrangement/>
   </div>
-  <Carrusel/>
   <FooterBottom/>
 </template>
 <style scoped>

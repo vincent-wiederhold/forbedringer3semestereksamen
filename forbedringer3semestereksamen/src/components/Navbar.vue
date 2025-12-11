@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const toggle = ref(false);
 const dropdown = ref(null);
@@ -20,6 +20,9 @@ function clickOutside(klik) {
 
 onMounted( () => {
     window.addEventListener("click", clickOutside);
+});
+onBeforeUnmount(()=> {
+    window.removeEventListener("click", clickOutside);
 });
 
 </script>

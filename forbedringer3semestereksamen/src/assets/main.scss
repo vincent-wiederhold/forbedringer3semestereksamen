@@ -327,6 +327,7 @@ footer{
         color: c.$fontcolor-secondary;
         &:hover{
             text-decoration: underline;
+            cursor: pointer;
         }
     }
 
@@ -908,7 +909,7 @@ button {
         .row{
             display: flex;
             flex-wrap: wrap;
-            margin: 40px 0px 20px 0px;
+            margin: 40px 0px 20px -68px;
 
             .individualarrangements{
                 width: 400px;
@@ -1020,16 +1021,17 @@ button {
 
             .kontaktoplysninger-container {
                 margin-top: -90px;
+                width: 318px;
             }
 
             .logo-container {
-                width: 293px;
+                width: 318px;
             }
 
             .some-container {
                 display: flex;
                 flex-direction: column;
-                width: 293px;
+                width: 318px;
                 margin-top: -150px;
             }
 
