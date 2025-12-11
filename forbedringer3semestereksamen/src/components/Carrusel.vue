@@ -61,12 +61,12 @@ getKunstner();
         <div class="overmarging"><p>Kom ned i butikken og spørg ind til kunstnerne samt processen bag deres værker.</p></div>
         <div class="kunstnere">
             <ul v-if="kunstner.length > 0">
-                <button v-on:click="prev"><font-awesome-icon icon="fa-solid fa-chevron-left" class="fa-2x"/></button>
+                <button @click="prev" aria-label="Forrige"><font-awesome-icon icon="fa-solid fa-chevron-left" class="fa-2x"/></button>
                 <li v-for="kunstnerData in synligeKunstnere" :key="kunstnerData">
                     <p>{{ kunstnerData.Kunstnernavn }}</p>
                     <p>{{ kunstnerData.Profession }}</p>
                 </li>
-                <button v-on:click="next"><font-awesome-icon icon="fa-solid fa-chevron-right" class="fa-2x"/></button>
+                <button @click="next" aria-label="Næste"><font-awesome-icon icon="fa-solid fa-chevron-right" class="fa-2x"/></button>
             </ul>
         </div>
     </div>

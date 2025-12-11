@@ -2,6 +2,12 @@
 const aabnKort = () => {
     window.open("https://www.google.com/maps/place/Brandts+Passage+30,+5000+Odense+C", "_blank");
 };
+const aabnInstagram = () => {
+    window.open("https://www.instagram.com/dinavejling?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==");
+};
+const aabnFacebook = () => {
+    window.open("https://www.facebook.com/people/Dina-Vejling-Dansk-kunsth%C3%A5ndv%C3%A6rk/100044299164332/");
+};
 </script>
 <template>
     <footer>
@@ -34,7 +40,7 @@ const aabnKort = () => {
                         <li><router-link to="/omos">Om Dina Vejling</router-link></li>
                         <li>Handelsbetingelser</li>
                         <li>Galleri Rummet</li>
-                        <li>Arrengementer</li>
+                        <li><router-link to="/arrangementer">Arrangementer</router-link></li>
                         <li><router-link to="/kunstnere">Kunstnere</router-link></li>
                     </ul>
                 </div>
@@ -43,8 +49,8 @@ const aabnKort = () => {
                 <div class="some-container">
                 <h4>Følg Dina Vejling</h4>
                     <div class="some">
-                        <font-awesome-icon icon="fa-brands fa-instagram" class="fa-4x"/>
-                        <font-awesome-icon icon="fa-brands fa-square-facebook" class="fa-4x"/>
+                        <a @click="aabnInstagram"><font-awesome-icon icon="fa-brands fa-instagram" class="fa-4x"/></a>
+                        <a @click="aabnFacebook"><font-awesome-icon icon="fa-brands fa-square-facebook" class="fa-4x"/></a>
                     </div>
                 </div>
             </div>

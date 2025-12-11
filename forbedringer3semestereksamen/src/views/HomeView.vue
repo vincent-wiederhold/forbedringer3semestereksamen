@@ -49,7 +49,7 @@ const aabnKort = () => {
     </div>
 
     <div class="controls">
-      <button @click="afspilningsKnap">
+      <button @click="afspilningsKnap" aria-label="Afspil eller pause video">
         <font-awesome-icon v-if="afspillerVideo" icon="fa-solid fa-pause" />
         <font-awesome-icon v-else icon="fa-solid fa-play" />
       </button>
