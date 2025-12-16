@@ -97,7 +97,7 @@ import galleriRummet from '@/assets/images/butik/galleri-rummet.jpg';
       <h2 class="heading">ARRANGEMENTER</h2>
       <p class="paragraf">Flere gange om året afholdes der arrangementer i butikken. Det kan bl.a. være udstillinger, hvor der kommer en af vores 
         dygtige kunstnere forbi og viser deres værker frem, eller at der holdes intimkoncert eller foredrag.</p>
-      <button>GÅ TIL ARRANGEMENTER</button>
+      <button><router-link to="/arrangementer"> GÅ TIL ARRANGEMENTER</router-link></button>
     </div>
   </div>
 

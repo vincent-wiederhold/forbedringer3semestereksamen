@@ -72,7 +72,7 @@ onBeforeUnmount(()=> {
                 <li class="kategori-link">Fade og tallerkener</li><hr class="divider-line">
                 <li class="kategori-link">Vaser</li><hr class="divider-line">
                 <li class="kategori-link">Lys og lamper</li><hr class="divider-line">
-                <li class="kategori-link">Urtekopper</li><hr class="divider-line">
+                <li class="kategori-link">Urtepotter</li><hr class="divider-line">
                 <li class="kategori-link">Andre keramiske sager</li><hr class="divider-line">
             </ul>
             <ul class="dropdown-kategori">

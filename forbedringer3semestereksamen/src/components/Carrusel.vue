@@ -1,60 +1,60 @@
 <script setup>
-import { computed, ref} from 'vue';
+import { computed, ref } from 'vue'; 
 
-const kunstner = ref([]);
-const startIndex = ref(0)
-const kunstnerLoaded = ref(false)
+const kunstner = ref([]);        // kunstner-data
+const startIndex = ref(0);       // start-position
+const kunstnerLoaded = ref(false);
 
 const getKunstner = async () => {
-    if (kunstnerLoaded.value) return;
-    try{
-        const res = await fetch('https://semestereksamen-85cb6-default-rtdb.europe-west1.firebasedatabase.app/kunstner.json',{
-        method: 'GET',
-        });
+    if (kunstnerLoaded.value) return; // hent kun en gang
 
-    const response = await res.json();
+    try {
+        const res = await fetch(
+            'https://semestereksamen-85cb6-default-rtdb.europe-west1.firebasedatabase.app/kunstner.json',
+            { method: 'GET' }
+        );
 
-    console.log('Firebase Response', response);
-
-    kunstner.value = Object.values(response);
-
-    kunstnerLoaded.value = true;
- 
-    console.log(response)
-    console.log('Kunstner Data:', kunstner.value);
-    } catch(error) {
-        console.error(error);
+        const response = await res.json(); // Konvertere fra JSOM til JavaScript
+        kunstner.value = Object.values(response);
+        kunstnerLoaded.value = true; 
+    } catch (error) {
+        console.error(error); // melder fejl i consollen hvis ikke det virker
     }
 };
 
 const next = () => {
-    startIndex.value++;
-    if( startIndex.value >= kunstner.value.length) {
-        startIndex.value = 0;
+    startIndex.value++; // går frem ved at lægge en til værdien
+    if (startIndex.value >= kunstner.value.length) {
+        startIndex.value = 0; // gør at start indexnustilles, så carusellen kan gå i loop
     }
 };
 
+// En funktion der angiver at der er 3 synlige
 const synligeKunstnere = computed(() => {
     const result = [];
-    for (let i = 0; i< 3; i++){
+
+    for (let i = 0; i < 3; i++) { // 3 elementer
         let synligeIndex = startIndex.value + i;
-        if( synligeIndex >= kunstner.value.length) {
-            synligeIndex = synligeIndex - kunstner.value.length;
+
+        if (synligeIndex >= kunstner.value.length) {
+            synligeIndex -= kunstner.value.length;
         }
-        result.push(kunstner.value[synligeIndex]);
+        result.push(kunstner.value[synligeIndex]); // tilføjer kunstneren
     }
-    return result;
+    return result; // viser til sammen de tre kunstnere
 });
 
+
 const prev = () => {
-    startIndex.value--;
-    if (startIndex.value< 0) {
-        startIndex.value = kunstner.value.length -1;
-    } 
+    startIndex.value--; // går tilbage ved at trække en fra værdien
+    if (startIndex.value < 0) {
+        startIndex.value = kunstner.value.length - 1; // trækker fra men gør at vi ikke går i minus, da den tager det element fra loopet der lige er vist
+    }
 };
 
-getKunstner();
+getKunstner(); // load data
 </script>
+
 <template>
     <div class="carruselsection">
         <h1>Populære Kunstnere</h1>

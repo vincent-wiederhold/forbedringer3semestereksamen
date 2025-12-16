@@ -17,5 +17,60 @@ import Navbar from '@/components/Navbar.vue';
   </div>
   <FooterBottom/>
 </template>
-<style scoped>
+<style scoped lang="scss">
+
+        
+    .arrangementsection{
+        width: 90%;
+        margin: 80px auto;
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px 0px 20px 0px;
+
+            .individualarrangements{
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                margin: 20px auto;
+                .arrangementbillede {
+                    height: 245px;
+                }
+
+                p{
+                    padding: 20px 0px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 800px) {
+
+      .arrangementsection{
+        margin: 80px 0px;
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px 0px 20px 0px;
+
+            .individualarrangements{
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                margin: 20px auto;
+                .arrangementbillede {
+                    height: 245px;
+                }
+
+                p{
+                    padding: 20px 0px;
+                }
+            }
+        }
+    }
+    }
+
+
+
+
 </style>
