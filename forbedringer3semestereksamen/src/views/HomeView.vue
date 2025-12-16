@@ -5,29 +5,31 @@ import FooterBottom from '@/components/FooterBottom.vue';
 import Navbar from '@/components/Navbar.vue';
 import { ref } from "vue";
 
-const video = ref(null);
-const afspillerVideo = ref(false);
+const video = ref(null);           // video-element
+const afspillerVideo = ref(false); // afspiller-status
 
 const afspilningsKnap = () => {
   // Hvis videoen er pauset, afspil den
   if (video.value.paused === true) {
-    video.value.play();
+    video.value.play();            // play
   } 
   // Ellers, hvis videoen spiller, pause den
   else if (video.value.paused === false) {
-    video.value.pause();
+    video.value.pause();           // pause
   }
 };
 
 // Videoens egens play/pause-event der opdaterer Vue statuses
-const haandterPlay = () => (afspillerVideo.value = true);
-const haandterPause = () => (afspillerVideo.value = false);
+const haandterPlay = () => (afspillerVideo.value = true);   // spiller
+const haandterPause = () => (afspillerVideo.value = false); // pauset
 
 const aabnKort = () => {
-    window.open("https://www.google.com/maps/place/Brandts+Passage+30,+5000+Odense+C", "_blank");
+  window.open(
+    "https://www.google.com/maps/place/Brandts+Passage+30,+5000+Odense+C",
+    "_blank"
+  ); // åbner i ny fane
 };
 </script>
-
 
 <template>
   <Navbar/>
